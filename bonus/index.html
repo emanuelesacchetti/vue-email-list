@@ -13,7 +13,7 @@
     <div id="app">
         <div class="container">
             <h1>Elenco delle email hackerate</h1>
-            <ul>
+            <ul v-if="emailList.length == 10">
                 <li v-for="(email,index) in emailList">
                     {{email}}
                 </li>
